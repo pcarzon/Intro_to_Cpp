@@ -70,7 +70,7 @@ int main (int argc, char *argv[])
 	//	Strings
 	string first_string = "This is my first string";
 	string secondString;
-	secondString = "Don't make me second string!"
+	secondString = "Don't make me second string!";
 	string thirdstring = first_string + "\t" + secondString;
 	string NumberToString = to_string(M_PI);
 	// char strings are also a thing and act like an array of characters but are not as usefull
@@ -112,7 +112,7 @@ int main (int argc, char *argv[])
 
 	//	Pointers
 	//	https://www.tutorialspoint.com/cplusplus/cpp_pointers.htm
-	double* first_pointer = &first_int;
+	int* first_pointer = &first_int;
 
 	cout << first_pointer << " " << *first_pointer << endl;
 
@@ -190,7 +190,7 @@ int main (int argc, char *argv[])
 	//##########################################################################################
 	//  Random Number Generators
 	//##########################################################################################
-	double lower = 1., upper = 10., presision = 1.;
+	int lower = 1, upper = 10, presision = 1;
 
 	srand(time(NULL));
 	cout << ((rand() % upper) + lower) / precision << endl;
@@ -212,7 +212,6 @@ int main (int argc, char *argv[])
 	double x, y;
   bool got_glue = false;
   int num_tests = 0;
-  ofstream output;
 	double e_thresh = 0.25;
 	double e_tot = 10;
   //  Initialize distributions for selecting gluon energy
