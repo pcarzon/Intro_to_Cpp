@@ -22,7 +22,10 @@ private:
 
 public:
 
-  particle();
+  particle()
+  {
+
+  }
   particle(vector<double> x, vector<double> p)
   {
     position = x;
