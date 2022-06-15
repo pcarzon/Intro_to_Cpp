@@ -8,7 +8,7 @@ CPP_FILES = functions.cpp main.cpp
 HEADER_FILES = functions.h global.h
 OBJECT_FILES = functions.o main.o
 
-functions.o : functions.h functions.cpp
+functions.o : functions.h global.h functions.cpp
 		$(CC) $(CFLAGS) functions.cpp
 
 main.o : $(HEADER_FILES) main.cpp
