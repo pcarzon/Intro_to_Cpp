@@ -203,10 +203,9 @@ int main (int argc, char *argv[])
 	cout << "Random number generation" << endl;
 	cout << "______________________________________________________________________________________" << endl;
 	int lower = 1, upper = 10;
-	double precision = 10.;
 
 	srand(time(NULL));
-	cout << ((double)(rand() % upper) + lower) / precision << endl;
+	cout << ((rand() % upper) + lower) << endl;
 
 	default_random_engine get_random_number;
 	get_random_number.seed(time(NULL));
