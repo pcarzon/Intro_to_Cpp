@@ -228,11 +228,12 @@ int main (int argc, char *argv[])
     y = get_probability(get_random_number);
 
     //  Test if the random probability is less than the function at selected energy
-    if (y < 1/x){ got_glue = true; }
-
-    output << x << " " << 1/x << endl;
-    num_tests++;
-    if (num_tests < 10000){ got_glue = false; }
+    if (y < 1/x)
+		{
+    	output << x << " " << y << " " << 1/x << endl;
+    	num_tests++;
+    	if (num_tests > 10000){ got_glue = true; }
+		}
 	}
 	//__________________________________________________________________________________________
 
