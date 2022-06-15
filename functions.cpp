@@ -75,6 +75,9 @@ double Functions::PositionDotProduct(particle first, particle second)
 //##########################################################################################
 void Functions::MomentumDotProduct(particle first, particle second, double &result)
 {
-  result = first*second;
+  vector<double> part1 = first.GetPosition();
+  vector<double> part2 = second.GetPosition();
+
+  result = part1[0]*part2[0] + part1[1]*part2[1] + part1[2]*part2[2];
 }
 //__________________________________________________________________________________________

@@ -35,11 +35,6 @@ public:
       momentum.clear();
   }
 
-  double particle::operator* (const particle& part)
-  {
-    return this->momentum[0]*part.momentum[0] + this->momentum[1]*part.momentum[1] + this->momentum[2]*part.momentum[2];
-  }
-
   void SetPosition(double x, double y, double z)
   {
     position[0] = x;
