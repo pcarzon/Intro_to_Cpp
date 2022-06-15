@@ -180,8 +180,19 @@ int main (int argc, char *argv[])
 	//##########################################################################################
 	cout << "Classes and Structs" << endl;
 	cout << "______________________________________________________________________________________" << endl;
-
 	//	https://www.geeksforgeeks.org/structure-vs-class-in-cpp/
+
+	particle first_particle;
+	particle second_particle({1, 2, 3}, {4, 5, 6});
+	first_particle.SetMomentum(2.3, 1.4, 4.6);
+	first_particle.SetPosition({4.3, 6.4, 3.2});
+
+	Functions calculator;
+	double result = 0.;
+
+	calculator.MomentumDotProduct(first_particle, second_particle, result);
+
+	cout << calculator.PositionDotProduct(first_particle, second_particle) << " " << result << endl;
 
 	//__________________________________________________________________________________________
 
