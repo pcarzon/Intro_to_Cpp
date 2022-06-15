@@ -200,8 +200,11 @@ int main (int argc, char *argv[])
 	//##########################################################################################
 	//  Random Number Generators
 	//##########################################################################################
-	int lower = 1, upper = 10, precision = 1;
-
+	cout << "Random number generation" << endl;
+	cout << "______________________________________________________________________________________" << endl;
+	int lower = 1, upper = 10;
+	double precision = 10;
+	
 	srand(time(NULL));
 	cout << ((rand() % upper) + lower) / precision << endl;
 
