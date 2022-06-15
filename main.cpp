@@ -92,8 +92,7 @@ int main (int argc, char *argv[])
 	int second_array[4] = {1, 2, 3, 4};
 	cout << second_array[0] << endl;
 	second_array[1] = 5;
-	int two_dimensional_array[2][2];
-	two_dimensional_array = {{1, 2}, {3, 4}};
+	int two_dimensional_array[2][2] = {{1, 2}, {3, 4}};
 
 	//	https://www.programiz.com/cpp-programming/vectors
 	vector<double> first_vector = {1., 2., 3., 4.};
@@ -190,7 +189,7 @@ int main (int argc, char *argv[])
 	//##########################################################################################
 	//  Random Number Generators
 	//##########################################################################################
-	int lower = 1, upper = 10, presision = 1;
+	int lower = 1, upper = 10, precision = 1;
 
 	srand(time(NULL));
 	cout << ((rand() % upper) + lower) / precision << endl;
