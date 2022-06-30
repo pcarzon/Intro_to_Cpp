@@ -55,6 +55,7 @@ int main (int argc, char *argv[])
 
 	output << "Hello World!" << endl;
 
+	input >> x >> y >> energy;
 	output.close();
 
 	//__________________________________________________________________________________________
@@ -72,7 +73,7 @@ int main (int argc, char *argv[])
 	string secondString;
 	secondString = "Don't make me second string!";
 	string thirdstring = first_string + "\t" + secondString;
-	string NumberToString = to_string(M_PI);
+	string NumberToString = to_string(3.14);
 	// char strings are also a thing and act like an array of characters but are not as usefull
 	cout  << thirdstring << endl << NumberToString << endl;
 
@@ -100,6 +101,7 @@ int main (int argc, char *argv[])
 	second_vector = {1., 2., 3., 4.};
 	second_vector.push_back(5.);
 	cout << second_vector.at(0) << " " << second_vector[1] << " " << second_vector.size() << endl;
+	vector<vector<int>> twodvector;
 
 	vector<double>::iterator first_iterator;
 	first_iterator = second_vector.begin();
@@ -113,6 +115,9 @@ int main (int argc, char *argv[])
 	//	https://www.tutorialspoint.com/cplusplus/cpp_pointers.htm
 	int* first_pointer = &first_int;
 
+	first_pointer = &second_array[0];
+	first_pointer = first_pointer + 1;
+
 	cout << first_pointer << " " << *first_pointer << endl;
 
 	//__________________________________________________________________________________________
@@ -123,16 +128,16 @@ int main (int argc, char *argv[])
 	//##########################################################################################
 	cout << "Operations" << endl;
 	cout << "______________________________________________________________________________________" << endl;
-
+	+ - * \
 	cout << first_int + first_double*(stringToDouble) << endl;
 	double calculation = 0;
-
+	calculation = calculation + first_int;
 	calculation += first_int;
 	calculation *= first_double;
 
 	int first_count = 0;
 	first_count++;
-	++first_count;
+	calculation + first_count++;
 
 	//	https://m.cplusplus.com/doc/tutorial/operators/
 	//__________________________________________________________________________________________
@@ -155,7 +160,7 @@ int main (int argc, char *argv[])
 	}
 	else {}
 
-	for (int i = 0; i < 10; i++)
+	for (int i = 0; i < vector.size(); i++)
 	{
 			for (int j = 0; j < 10; j++)
 			{
